@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
  gem 'bootstrap-sass','2.0.0'
-gem 'bcrypt-ruby' ,'3.0.1'
+ gem 'bcrypt-ruby' ,'3.0.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
  group :development, :test do
@@ -26,6 +26,7 @@ end
 gem 'jquery-rails'
 group :test do
   gem 'capybara' ,'1.1.2'
+  gem 'factory_girl_rails','1.4.0'
 end
 
 group :production do
