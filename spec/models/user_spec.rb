@@ -22,6 +22,19 @@ describe User do
   it {should respond_to(:authenticate)}
   it {should respond_to(:remember_token)}
   it {should be_valid}
+  it {should respond_to(:admin)}
+
+   describe "with admin attribute set to 'true'" do
+     before do
+       @user.save
+       @user.toggle!(:admin)
+     end
+     it {should be_admin}
+   end
+
+
+
+
 
    describe"when name is not present" do
      before {@user.name= " "}
